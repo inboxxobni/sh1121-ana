@@ -1,0 +1,44 @@
+{
+  "name": "sh1121-ana",
+  "version": "0.1.0",
+  "description": "The sh1121-ana Cordis plugin.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inboxxobni/sh1121-ana.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "keywords": [
+    "cordis",
+    "cordis-plugin",
+    "acrylblends"
+  ],
+  "acryl": {
+    "schemaVersion": 1,
+    "artifacts": {
+      "plugins": [
+        "./index.ts"
+      ]
+    },
+    "requires": {
+      "host": [
+        "router"
+      ]
+    },
+    "provides": {
+      "host": []
+    },
+    "slots": {
+      "offers": [],
+      "fills": []
+    },
+    "visibility": "public"
+  }
+}
