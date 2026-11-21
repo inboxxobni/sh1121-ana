@@ -1,0 +1,3 @@
+- insert:
+    - id: sh1121-ana
+      name: ./index.ts

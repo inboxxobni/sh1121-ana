@@ -1,25 +1,34 @@
 {
   "name": "sh1121-ana",
-  "version": "0.1.1",
-  "description": "The sh1121-ana Cordis plugin.",
+  "version": "0.1.2",
+  "description": "A tiny plugin for the sharing cycle: GET /sh1121-ana answers a greeting.",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/inboxxobni/sh1121-ana.git"
-  },
   "type": "module",
   "exports": {
     ".": "./index.ts",
     "./package.json": "./package.json"
   },
+  "files": [
+    "*.ts",
+    "**/*.ts",
+    "README.md",
+    "cordis.patch.yml"
+  ],
   "peerDependencies": {
     "@deepseek-ai/cordis": "4.0.4"
   },
   "keywords": [
     "cordis",
     "cordis-plugin",
-    "acrylblends"
+    "acrylblends",
+    "acryl-package",
+    "dsh-plugin"
   ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
   "acryl": {
     "schemaVersion": 1,
     "artifacts": {
@@ -40,5 +49,9 @@
       "fills": []
     },
     "visibility": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inboxxobni/sh1121-ana.git"
   }
 }
